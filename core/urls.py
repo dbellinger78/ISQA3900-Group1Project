@@ -2,14 +2,16 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
-
+from .views import contact
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('contact/', contact),
     path('', include('store.urls', namespace='store')),
     path('basket/', include('basket.urls', namespace='basket')),
     path('payment/', include('payment.urls', namespace='payment')),
     path('account/', include('account.urls', namespace='account')),
     path('orders/', include('orders.urls', namespace='orders')),
+
 ]
 
 if settings.DEBUG:
