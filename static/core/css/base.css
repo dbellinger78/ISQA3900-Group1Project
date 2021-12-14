@@ -75,4 +75,12 @@ html, body, p, div{
 
 .footer > div > div > ul > li{
     padding-bottom:8px;
+
+}
+.center{
+
+     margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
 }

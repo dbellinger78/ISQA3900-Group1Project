@@ -2,10 +2,12 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
-from .views import contact
+from .views import contact, about
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('contact/', contact),
+    path('about/',about),
     path('', include('store.urls', namespace='store')),
     path('basket/', include('basket.urls', namespace='basket')),
     path('payment/', include('payment.urls', namespace='payment')),

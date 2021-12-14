@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 
-
+#log into the admin and remove a category
 class ll_ATS(unittest.TestCase):
 
     def setUp(self):
